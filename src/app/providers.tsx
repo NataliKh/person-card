@@ -1,1 +1,1 @@
-﻿export const AppProviders: React.FC<React.PropsWithChildren> = ({ children }) => children as any;
+﻿export const AppProviders: React.FC<React.PropsWithChildren> = ({ children }) =>  <>{children}</>;
