@@ -1,9 +1,9 @@
 export type Skill = {
-  id: string;
+  id?: string;
   name: string;
-  level: number;
+  level?: number;
   color?: string;
-  type?: 'bar' | 'circle';
+  type?: "bar" | "circle";
 };
 
 export type Member = {
@@ -13,7 +13,7 @@ export type Member = {
   age?: number;
   about?: string;
   avatarUrl?: string;
-  socials?: Array<{ platform: 'tg'|'vk'|'github'|'linkedin'|'x'|'site'; url: string }>;
+  socials?: Array<{ platform: "tg" | "vk" | "github" | "linkedin" | "x" | "site"; url: string }>;
   roleBadge?: string;
   skills?: Skill[];
   contribution?: string[];
