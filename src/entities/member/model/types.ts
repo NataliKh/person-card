@@ -18,4 +18,5 @@ export type Member = {
   skills?: Skill[];
   contribution?: string;
   portfolio?: string[];
+  areas?: string[];
 };
