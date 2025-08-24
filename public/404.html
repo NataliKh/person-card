@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
+    <meta http-equiv="refresh" content="0; url=/person-card/" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <p>Redirecting to /person-card/ …</p>
+    <script>
+      (function () {
+        var base = "/person-card/";
+        if (location.pathname !== base) {
+          location.replace(base);
+        }
+      })();
+    </script>
+  </body>
+</html>

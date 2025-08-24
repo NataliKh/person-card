@@ -1,13 +1,13 @@
 {
   "name": "Reactoria",
   "short_name": "Reactoria",
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#0B1220",
   "theme_color": "#0B1220",
   "icons": [
     {
-      "src": "/logo.svg",
+      "src": "logo.svg",
       "sizes": "128x128",
       "type": "image/svg+xml"
     }
