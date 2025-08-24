@@ -16,6 +16,6 @@ export type Member = {
   socials?: Array<{ platform: "tg" | "vk" | "github" | "linkedin" | "x" | "site"; url: string }>;
   roleBadge?: string;
   skills?: Skill[];
-  contribution?: string;
+  contribution?: string[];
   portfolio?: string[];
 };
