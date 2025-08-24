@@ -7,7 +7,7 @@ export function Navbar() {
     <nav className="nav">
       <div className="container nav-row">
         <Link to={routes.home()} className="brand" aria-label="Reactoria">
-        <img
+          <img
             className="brand-logo"
             src="/logo.svg"
             width={40}
@@ -20,10 +20,16 @@ export function Navbar() {
           </span>
         </Link>
         <div className="nav-links">
-          <NavLink to={routes.home()} className={({isActive}) => "nav-link" + (isActive ? " active" : "")}>
+          <NavLink
+            to={routes.home()}
+            className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}
+          >
             Главная
           </NavLink>
-          <NavLink to={routes.favorites()} className={({isActive}) => "nav-link" + (isActive ? " active" : "")}>
+          <NavLink
+            to={routes.favorites()}
+            className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}
+          >
             Избранные
           </NavLink>
         </div>
