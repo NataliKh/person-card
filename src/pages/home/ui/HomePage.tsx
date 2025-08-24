@@ -1,12 +1,22 @@
-import React from "react";
 import { useTitle } from "@/shared/lib/useTitle";
-
+import { members } from "@/entities/member";
+import { Card } from "@/widgets/card";
+ 
 export function HomePage() {
   useTitle("Главная");
   return (
-    <section className="page container">
-      <h1>Команда</h1>
-      <p className="lead">Стартовый шаблон. Далее сюда добавим сетку карточек участников и фильтры.</p>
-    </section>
+    <div className="page container">
+      <section className="section">
+        <h1 className="h1">Наша команда</h1>
+      </section>
+      
+      <section className="section">
+        <div className="grid cards">
+          {members.map((m) => (
+            <Card key={m.id} member={m} />
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }
