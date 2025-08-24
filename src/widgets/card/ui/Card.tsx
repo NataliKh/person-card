@@ -9,7 +9,7 @@ type CardProps = {
 export function Card({ member }: CardProps) {
   return (
     <article className="card">
-      <Favorites />
+      <Favorites id={member.id} />
       <CardImage src={member.avatarUrl} alt={member.firstName} />
       <div className="card-body">
         <AboutMember
